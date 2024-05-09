@@ -16,14 +16,14 @@ In order to run the test code for each of the three languages:
 
 ## Screenshots
 1- Java run demo
-![Java run](https://github.com/ahmadalkawasmeh/seg3103_playground/assets/Java_run_SC.png "JRun")
+![Java run](https://github.com/ahmadalkawasmeh/seg3103_playground/assets/Java_run_SC.png?raw=true "JRun")
 2- Java test demo
-![Java test](https://github.com/ahmadalkawasmeh/seg3103_playground/assets/Java_test_SC.png "JTest")
+![Java test](https://github.com/ahmadalkawasmeh/seg3103_playground/assets/Java_test_SC.png?raw=true "JTest")
 3- Python run demo
-![Python run](https://github.com/ahmadalkawasmeh/seg3103_playground/assets/Python_run_SC.png "PRun")
+![Python run](https://github.com/ahmadalkawasmeh/seg3103_playground/assets/Python_run_SC.png?raw=true "PRun")
 4- Python test demo
-![Python test](https://github.com/ahmadalkawasmeh/seg3103_playground/assets/Python_test_SC.png "PTest")
+![Python test](https://github.com/ahmadalkawasmeh/seg3103_playground/assets/Python_test_SC.png?raw=true "PTest")
 5- Elixir run demo
-![Elixir run](https://github.com/ahmadalkawasmeh/seg3103_playground/assets/Elixir_run_SC.png "ERun")
+![Elixir run](https://github.com/ahmadalkawasmeh/seg3103_playground/assets/Elixir_run_SC.png?raw=true "ERun")
 6- Elixir test demo
-![Python test](https://github.com/ahmadalkawasmeh/seg3103_playground/assets/Elixir_test_SC.png "ETest")
+![Python test](https://github.com/ahmadalkawasmeh/seg3103_playground/assets/Elixir_test_SC.png?raw=true "ETest")
