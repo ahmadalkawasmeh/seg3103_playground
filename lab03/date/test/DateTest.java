@@ -148,5 +148,46 @@ class DateTest {
       () -> new Date(1975, 6, -50)
     );
   }
-
+  
+  @Test
+  void testToStringWithValidDate() {
+        Date date = new Date(2021, 7, 15);
+        String expected = "2021/July/15";
+        assertEquals(expected, date.toString());
+  }
+  
+  @Test
+  void testEqualsWithDifferentObjectType() {
+        Date date1 = new Date(2021, 7, 15);
+        String notADate = "2021-07-15";
+        assertFalse(date1.equals(notADate));
+  }
+  
+  @Test
+  void testEqualsWithDifferentDay() {
+        Date date1 = new Date(2021, 7, 15);
+        Date date2 = new Date(2021, 7, 14);
+        assertFalse(date1.equals(date2));
+  }
+  
+  @Test
+  void testEqualsWithDifferentMonth() {
+        Date date1 = new Date(2021, 7, 15);
+        Date date2 = new Date(2021, 6, 15);
+        assertFalse(date1.equals(date2));
+  }
+  
+  @Test
+  void testEqualsWithDifferentYear() {
+        Date date1 = new Date(2021, 7, 15);
+        Date date2 = new Date(2020, 7, 15);
+        assertFalse(date1.equals(date2));
+  }
+    
+  @Test
+  void testEqualsWithSameDate() {
+        Date date1 = new Date(2021, 7, 15);
+        Date date2 = new Date(2021, 7, 15);
+        assertTrue(date1.equals(date2));
+    }
 }

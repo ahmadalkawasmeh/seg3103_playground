@@ -143,6 +143,10 @@ public class Date {
 		}
 		return year % 4 == 0;
 	}
+	
+	public String toString() {
+		return year + "/" + monthNames[month-1] + "/" + day;
+	}
 
 	public boolean equals(Object obj) {
 		if (! (obj instanceof Date)) return false;
