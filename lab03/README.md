@@ -6,7 +6,7 @@ Ahmad Alkawasmeh
 The goal of this lab was to implement coverage tests, learn how coverage tests work and the underlying mechanisms of coverage testing tools. 
 
 ## Important remarks
-I was only able to achieve 95 percent line coverage and 92 percent branch coverage before refactoring. I know this is the best I could do without changing the actual Date class because it was due to an **unreachable** branch of the method named **isEndOfMonth**. That is where the date needs to be **February 29 and not leap year**, which makes it an invalid date, thus an illegalArgumentException is thrown **before** it reaches the **isEndOfMonth** method, therefore we can never cover that branch. There is also two methods that aren’t being used, which are the **toString** and **equals** methods, which are the last two methods in the Date class. Since those methods never get used in the class, they’ll never be reachable and thus lower our coverage results. 
+I was only able to achieve 95 percent line coverage and 92 percent branch coverage before refactoring. I know this is the best I could do without changing the actual Date class because it was due to an **unreachable** branch of the method named **isEndOfMonth**. That is where the date needs to be **February 30 and not leap year**, which makes it an invalid date, thus an illegalArgumentException is thrown **before** it reaches the **isEndOfMonth** method, therefore we can never cover that branch. There is also two methods that aren’t being used, which are the **toString** and **equals** methods, which are the last two methods in the Date class. Since those methods never get used in the class, they’ll never be reachable and thus lower our coverage results. 
 
 ## Run instructions
 
