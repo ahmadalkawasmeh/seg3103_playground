@@ -33,8 +33,8 @@ public class FizzBuzzTest {
 
     @Test
     void buzz_test(){
-
-
+        result = fiz.check(t2);
+        assert(result == "Buzz");
     }
 
     @Test
