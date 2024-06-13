@@ -36,6 +36,13 @@ public class FizzBuzz {
             result = "Fizz";
             return result;
         }
+
+        if (numStrToInt % 5 == 0){
+            result = "Buzz";
+            return result;
+        }
+
+
         return result;
     }
 }
