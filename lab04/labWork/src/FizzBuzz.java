@@ -6,6 +6,7 @@ public class FizzBuzz {
         this.result = "";
     }
 
+    // Fro checking an integer
     public String check(int num) {
         if (num % 3 == 0 && num % 5 == 0){
             result = "FizzBuzz";
@@ -29,6 +30,7 @@ public class FizzBuzz {
         return result;
     }
 
+    // For checking an integer passed in as a string
     public String check(String numStr) {
         int numStrToInt = Integer.parseInt(numStr);
 

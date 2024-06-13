@@ -58,13 +58,13 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void str_num_test(){
+    void str_fizz_test(){
         result = fiz.check(t5);
         assertEquals("Fizz", result);
     }
 
     @Test
-    void str_num_test2(){
+    void str_buzz_test(){
         result = fiz.check(t6);
         assertEquals("Buzz", result);
     }
