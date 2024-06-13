@@ -76,8 +76,4 @@ public class FizzBuzzTest {
         result = fiz.check(t7);
         assertEquals("FizzBuzz", result);
     }
-
-
-
-
 }

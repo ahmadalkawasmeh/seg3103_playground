@@ -20,12 +20,9 @@ public class FizzBuzz {
             return result;
         }
 
-        if (result.isEmpty()){
-            result = String.valueOf(num);
-            return result;
-        }
-        return result;
+        return String.valueOf(num);
     }
+
 
     // For checking an integer passed in as a string
     public String check(String numStr) {
