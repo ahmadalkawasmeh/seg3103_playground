@@ -8,15 +8,13 @@ public class FizzBuzzTest {
     private int t2;
     private int t3;
     private FizzBuzz fiz;
-    private int resultNum;
-    private String resultStr;
+    private String result;
 
 
     @BeforeEach
     void setUp(){
         this.fiz = new FizzBuzz();
-        this.resultNum = 0;
-        this.resultStr = "";
+        this.result = "";
         this.t1 = 3;
         this.t2 = 5;
         this.t3 = 15;
@@ -29,12 +27,13 @@ public class FizzBuzzTest {
 
     @Test
     void fizz_test(){
-        resultStr = fiz.check(t1);
-        assert(resultStr == "Fizz");
+        result = fiz.check(t1);
+        assert(result == "Fizz");
     }
 
     @Test
     void buzz_test(){
+
 
     }
 
