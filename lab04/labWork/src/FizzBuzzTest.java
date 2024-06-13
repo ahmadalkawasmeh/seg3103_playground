@@ -52,7 +52,6 @@ public class FizzBuzzTest {
     @Test
     void not_dividable_test(){
         result = fiz.check(t4);
-        System.out.println(result);
         assertEquals(String.valueOf(t4), result);
     }
 

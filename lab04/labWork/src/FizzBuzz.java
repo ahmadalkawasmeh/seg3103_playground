@@ -29,8 +29,13 @@ public class FizzBuzz {
         return result;
     }
 
-    public String check(String num) {
-        return "Fizz";
+    public String check(String numStr) {
+        int numStrToInt = Integer.parseInt(numStr);
 
+        if (numStrToInt % 3 == 0){
+            result = "Fizz";
+            return result;
+        }
+        return result;
     }
 }
