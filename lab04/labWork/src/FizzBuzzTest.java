@@ -39,6 +39,8 @@ public class FizzBuzzTest {
 
     @Test
     void fizz_buzz_test(){
+        result = fiz.check(t3);
+        assert(result == "FizzBuzz");
 
     }
 
