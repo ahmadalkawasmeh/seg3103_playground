@@ -8,10 +8,7 @@ public class FizzBuzz {
 
     // Fro checking an integer
     public String check(int num) {
-        if (num % 3 == 0 && num % 5 == 0){
-            result = "FizzBuzz";
-            return result;
-        }
+        if (isFizzBuzz(num)) return result;
 
         if (num % 3 == 0){
             result = "Fizz";
@@ -34,6 +31,10 @@ public class FizzBuzz {
     public String check(String numStr) {
         int numStrToInt = Integer.parseInt(numStr);
 
+        if (isFizzBuzz(numStrToInt)){
+            return "FizzBuzz";
+        }
+
         if (numStrToInt % 3 == 0){
             result = "Fizz";
             return result;
@@ -44,7 +45,16 @@ public class FizzBuzz {
             return result;
         }
 
-
         return result;
     }
+
+    private boolean isFizzBuzz(int n) {
+        if (n % 3 == 0 && n % 5 == 0){
+            result = "FizzBuzz";
+            return true;
+        }
+        return false;
+    }
+
+
 }

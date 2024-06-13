@@ -74,7 +74,7 @@ public class FizzBuzzTest {
     @Test
     void str_fizz_buzz_test(){
         result = fiz.check(t7);
-        assertEquals("Buzz", result);
+        assertEquals("FizzBuzz", result);
     }
 
 
