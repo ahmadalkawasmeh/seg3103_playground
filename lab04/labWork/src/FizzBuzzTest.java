@@ -2,6 +2,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 public class FizzBuzzTest {
     private int t1;
@@ -48,7 +50,8 @@ public class FizzBuzzTest {
     @Test
     void not_dividable(){
         result = fiz.check(t4);
-        assert(result == String.valueOf(t4));
+        System.out.println(result);
+        assertEquals(result, String.valueOf(t4));
     }
 
 

@@ -22,6 +22,11 @@ public class FizzBuzz {
             return result;
         }
 
+        if (result.isEmpty()){
+            result = String.valueOf(num);
+            return result;
+        }
+
 
 
         return result;
