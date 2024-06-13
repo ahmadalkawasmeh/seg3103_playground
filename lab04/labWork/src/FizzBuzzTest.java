@@ -32,28 +32,25 @@ public class FizzBuzzTest {
     @Test
     void fizz_test(){
         result = fiz.check(t1);
-        assert(result == "Fizz");
+        assertEquals("Fizz", result);
     }
 
     @Test
     void buzz_test(){
         result = fiz.check(t2);
-        assert(result == "Buzz");
+        assertEquals("Buzz", result);
     }
 
     @Test
     void fizz_buzz_test(){
         result = fiz.check(t3);
-        assert(result == "FizzBuzz");
+        assertEquals("FizzBuzz", result);
     }
 
     @Test
     void not_dividable(){
         result = fiz.check(t4);
         System.out.println(result);
-        assertEquals(result, String.valueOf(t4));
+        assertEquals(String.valueOf(t4), result);
     }
-
-
-
 }
