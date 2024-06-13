@@ -13,6 +13,7 @@ public class FizzBuzzTest {
     private String t5;
     private String t6;
     private String t7;
+    private String t8;
     private FizzBuzz fiz;
     private String result;
 
@@ -28,6 +29,7 @@ public class FizzBuzzTest {
         this.t5 = "6";
         this.t6 = "10";
         this.t7 = "30";
+        this.t8 = "31";
     }
 
     @AfterEach
@@ -75,5 +77,11 @@ public class FizzBuzzTest {
     void str_fizz_buzz_test(){
         result = fiz.check(t7);
         assertEquals("FizzBuzz", result);
+    }
+
+    @Test
+    void str_not_dividable_test(){
+        result = fiz.check(t8);
+        assertEquals(t8, result);
     }
 }
