@@ -10,6 +10,7 @@ public class FizzBuzzTest {
     private int t2;
     private int t3;
     private int t4;
+    private String t5;
     private FizzBuzz fiz;
     private String result;
 
@@ -22,6 +23,7 @@ public class FizzBuzzTest {
         this.t2 = 5;
         this.t3 = 15;
         this.t4 = 14;
+        this.t5 = "6";
     }
 
     @AfterEach
@@ -48,9 +50,15 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void not_dividable(){
+    void not_dividable_test(){
         result = fiz.check(t4);
         System.out.println(result);
         assertEquals(String.valueOf(t4), result);
+    }
+
+    @Test
+    void str_num_test(){
+        result = fiz.check(t5);
+        assertEquals("Fizz", result);
     }
 }
