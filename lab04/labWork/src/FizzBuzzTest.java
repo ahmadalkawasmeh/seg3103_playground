@@ -32,10 +32,12 @@ public class FizzBuzzTest {
         this.t8 = "31";
     }
 
+
     @AfterEach
     void tearDown(){
 
     }
+
 
     @Test
     void fizz_test(){
@@ -43,11 +45,13 @@ public class FizzBuzzTest {
         assertEquals("Fizz", result);
     }
 
+
     @Test
     void buzz_test(){
         result = fiz.check(t2);
         assertEquals("Buzz", result);
     }
+
 
     @Test
     void fizz_buzz_test(){
@@ -55,11 +59,13 @@ public class FizzBuzzTest {
         assertEquals("FizzBuzz", result);
     }
 
+
     @Test
     void not_dividable_test(){
         result = fiz.check(t4);
         assertEquals(String.valueOf(t4), result);
     }
+
 
     @Test
     void str_fizz_test(){
@@ -67,17 +73,20 @@ public class FizzBuzzTest {
         assertEquals("Fizz", result);
     }
 
+
     @Test
     void str_buzz_test(){
         result = fiz.check(t6);
         assertEquals("Buzz", result);
     }
 
+
     @Test
     void str_fizz_buzz_test(){
         result = fiz.check(t7);
         assertEquals("FizzBuzz", result);
     }
+
 
     @Test
     void str_not_dividable_test(){

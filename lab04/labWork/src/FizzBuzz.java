@@ -1,23 +1,25 @@
 public class FizzBuzz {
 
     private String result;
+
     // Constructor sets result to empty string
     public FizzBuzz() {
         this.result = "";
     }
 
-    // Fro checking an integer
-    public String check(int num) {
-        if (isFizzBuzz(num)) return result;
 
-        if (num % 3 == 0){
-            result = "Fizz";
-            return result;
+    // For checking an integer
+    public String check(int num) {
+        if (isFizzBuzz(num)){
+            return "FizzBuzz";
         }
 
-        if (num % 5 == 0){
-            result = "Buzz";
-            return result;
+        if (isFizz(num)){
+            return "Fizz";
+        }
+
+        if (isBuzz(num)){
+            return "Buzz";
         }
 
         return String.valueOf(num);
@@ -26,32 +28,35 @@ public class FizzBuzz {
 
     // For checking an integer passed in as a string
     public String check(String numStr) {
-        int numStrToInt = Integer.parseInt(numStr);
+        int numStrToInt = Integer.parseInt(numStr); // Convert to integer
 
-        if (isFizzBuzz(numStrToInt)){
-            return "FizzBuzz";
-        }
+        result = check(numStrToInt); // Delegate back to normal check
 
-        if (numStrToInt % 3 == 0){
-            result = "Fizz";
-            return result;
-        }
-
-        if (numStrToInt % 5 == 0){
-            result = "Buzz";
-            return result;
-        }
-
-        return numStr;
+        return result;
     }
+
 
     private boolean isFizzBuzz(int n) {
         if (n % 3 == 0 && n % 5 == 0){
-            result = "FizzBuzz";
+            return true;
+        }
+
+        return false;
+    }
+
+
+    private boolean isFizz(int n) {
+        if (n % 3 == 0){
             return true;
         }
         return false;
     }
 
 
+    private boolean isBuzz(int n) {
+        if (n % 5 == 0){
+            return true;
+        }
+        return false;
+    }
 }
