@@ -28,4 +28,9 @@ public class FizzBuzz {
         }
         return result;
     }
+
+    public String check(String num) {
+        return "Fizz";
+
+    }
 }
