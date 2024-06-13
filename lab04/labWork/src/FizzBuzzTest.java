@@ -11,6 +11,7 @@ public class FizzBuzzTest {
     private int t3;
     private int t4;
     private String t5;
+    private String t6;
     private FizzBuzz fiz;
     private String result;
 
@@ -24,6 +25,7 @@ public class FizzBuzzTest {
         this.t3 = 15;
         this.t4 = 14;
         this.t5 = "6";
+        this.t6 = "10";
     }
 
     @AfterEach
@@ -60,4 +62,12 @@ public class FizzBuzzTest {
         result = fiz.check(t5);
         assertEquals("Fizz", result);
     }
+
+    @Test
+    void str_num_test2(){
+        result = fiz.check(t6);
+        assertEquals("Buzz", result);
+    }
+
+
 }
