@@ -42,7 +42,7 @@ public class FizzBuzz {
             return result;
         }
 
-        return result;
+        return numStr;
     }
 
     private boolean isFizzBuzz(int n) {
