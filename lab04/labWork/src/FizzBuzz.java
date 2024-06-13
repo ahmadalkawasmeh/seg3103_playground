@@ -15,7 +15,7 @@ public class FizzBuzz {
             result = "Buzz";
         }
 
-        else {
+        if (result.isEmpty()){
             result = String.valueOf(num);
         }
 
