@@ -1,6 +1,21 @@
 defmodule GradesWeb.PageLive do
   use GradesWeb, :live_view
   #alias Grades.Calculator
+  
+    defmodule Calculator do
+    def letter_grade (_input) do
+      "B+"
+    end
+
+    def percentage_grade (_input) do
+      84
+    end
+
+    def numeric_grade (_input) do
+      3.36
+    end
+
+  end
 
   @impl true
   def mount(_params, _session, socket) do
