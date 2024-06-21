@@ -1,20 +1,12 @@
-# Lab 4
+# Lab 5
 Ahmad Alkawasmeh 
 300064642
 
 ## Summary
-In the table below I've organized the commit groups by rows, where each row consists of a RED commit, GREEN commit, and a Refactor commit. I've implemented the FizzBuzz calculator. All my source code and tests is under the folder named labWork.
+Below I've attached screenshots of the working website for the elixir grade, and for the successful twitter tests. I have implemented the 4 missing test cases using mock objects. For the grade website, I’ve stubbed the 3 values for the grades while avoiding to actually implement the calculator.
 
 ---
-### Commit Groups
-(By commit number)
-| Failing Test   | Passing Test | Refactored Code |
-|----------------|--------------|-----------------|
-| 1 		| 		2		|			3, 4 		|
-| 5			| 		6		|			7 		|
-| 8			| 		9		|			10 		|
-| 11		| 		12		|			13 		|
-| 14		| 		15		|			16 		|
-| 17		| 		18		|			19 		|
-| 20		| 		21		|			22 		|
-| 23		| 		24		|			25 		|
+1- Grade website working\
+![gradeWorking](https://github.com/ahmadalkawasmeh/seg3103_playground/blob/main/lab05/assets/gradeWorking.png)\
+2- Twitter passing tests\
+![twitterWorking](https://github.com/ahmadalkawasmeh/seg3103_playground/blob/main/lab05/assets/twitterWorking.png)\
