@@ -6,6 +6,12 @@ defmodule Grades.Calculator do
       Enum.sum(grades) / Enum.count(grades)
     end
   end
+  
+   def failed_to_participate(avg_homework, avg_exams, labs) do
+      num_labs = num_labs_pass(labs)
+      avg_homework < 0.4 || avg_exams < 0.4 || num_labs < 3
+    end
+
 
   
   def percentage_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
