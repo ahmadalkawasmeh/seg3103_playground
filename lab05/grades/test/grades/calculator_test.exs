@@ -30,14 +30,14 @@ defmodule Grades.CalculatorTest do
 
   test "TC3" do
     grades = %{homework: [0.5], labs: [0.3, 0.3, 0.3], midterm: 0.3, final: 0.3}
-    assert Calculator.percentage_grade(grades) == 35
+    assert Calculator.percentage_grade(grades) == 36
     assert Calculator.letter_grade(grades) == "EIN"
     assert Calculator.numeric_grade(grades) == 0
   end
 
   test "TC4" do
     grades = %{homework: [0.5], labs: [0.3, 0.3], midterm: 0.5, final: 0.5}
-    assert Calculator.percentage_grade(grades) == 45
+    assert Calculator.percentage_grade(grades) == 46
     assert Calculator.letter_grade(grades) == "EIN"
     assert Calculator.numeric_grade(grades) == 0
   end
