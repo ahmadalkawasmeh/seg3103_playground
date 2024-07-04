@@ -1,4 +1,13 @@
 defmodule Grades.Calculator do
+  def avg(grades) do
+    if Enum.count(grades) == 0 do
+      0
+    else
+      Enum.sum(grades) / Enum.count(grades)
+    end
+  end
+
+  
   def percentage_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
     avg_homework =
       if Enum.count(homework) == 0 do
