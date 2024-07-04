@@ -5,16 +5,16 @@ defmodule Grades.Application do
 
   use Application
 
-  @impl true
   def start(_type, _args) do
     children = [
+      # Start the Telemetry supervisor
       GradesWeb.Telemetry,
-      {DNSCluster, query: Application.get_env(:grades, :dns_cluster_query) || :ignore},
+      # Start the PubSub system
       {Phoenix.PubSub, name: Grades.PubSub},
-      # Start a worker by calling: Grades.Worker.start_link(arg)
-      # {Grades.Worker, arg},
-      # Start to serve requests, typically the last entry
+      # Start the Endpoint (http/https)
       GradesWeb.Endpoint
+      # Start a worker by calling: Grades.Worker.start_link(arg)
+      # {Grades.Worker, arg}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
@@ -25,7 +25,6 @@ defmodule Grades.Application do
 
   # Tell Phoenix to update the endpoint configuration
   # whenever the application is updated.
-  @impl true
   def config_change(changed, _new, removed) do
     GradesWeb.Endpoint.config_change(changed, removed)
     :ok
